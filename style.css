@@ -1,0 +1,52 @@
+@font-face {
+    font-family: norse-bold;
+    src: url("./Norse-Bold.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 30%;
+    background-image: url("./img/plants.jpg");
+    background-size: cover;
+}
+
+.odin-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+}
+
+.odin-picture {
+    width: 64px;
+    height: 90px;
+}
+
+.company-title {
+    font-family: norse-bold;
+    color: white;
+    font-size: 64px;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+footer, footer a {
+    color: white;
+}
