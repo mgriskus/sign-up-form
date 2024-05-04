@@ -3,6 +3,12 @@
     src: url("./Norse-Bold.otf");
 }
 
+:root {
+    --sign-up-margin: 48px;
+    --fieldset-padding: 16px;
+    --main-color: #596D48;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -13,6 +19,8 @@ body {
     display: flex;
     background-color: #F9FAFB;
 }
+
+/* The side with the image */
 
 .side {
     display: flex;
@@ -40,7 +48,7 @@ body {
 .company-title {
     font-family: norse-bold;
     color: white;
-    font-size: 64px;
+    font-size: 4rem;
 }
 
 footer {
@@ -52,12 +60,38 @@ footer, footer a {
     color: white;
 }
 
-.info {
-    font-size: 18px;
+/* The call to action and sign-up form */
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.call-to-action {
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 16px;
+}
+
+.call-to-action,
+.log-in-p,
+button {
+    margin-left: var(--sign-up-margin);
+    margin-right: var(--sign-up-margin);
 }
 
 .form-main {
+    padding-left: calc(var(--sign-up-margin) - var(--fieldset-padding));
+    padding-right: calc(var(--sign-up-margin) - var(--fieldset-padding));
     background-color: white;
+}
+
+.sign-up fieldset {
+    padding: var(--fieldset-padding);
+    border: 0;
 }
 
 ul {
@@ -81,58 +115,30 @@ label {
     color: rgb(80, 80, 80);
 }
 
+input {
+    border: 2px solid #E5E7EB;
+}
+
 input:invalid {
-    border: red;
-}
-
-legend {
-    font-size: 24px;
-}
-.sign-up fieldset {
-    padding: 16px;
-}
-
-p,
-button {
-    margin: 16px;
-}
-
-fieldset {
-    border: 0;
+    border-color: red;
 }
 
 input,
 button {
     font-family: inherit;
     font-size: 100%;
+    border-radius: 4px;
 }
 
 button {
     border: none;
-    border-radius: 4px;
-    background-color: #596D48;
+    background-color: var(--main-color);
     color: white;
-    padding: 4px 16px;
+    padding: 8px 36px;
+    font-weight: bold;
 }
 
 .log-in-link {
-    color: #596D48;
+    color: var(--main-color);
     text-decoration: none;
-}
-
-.sign-up {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.info,
-.log-in-p,
-button {
-    margin-left: 48px;
-    margin-right: 48px;
-}
-
-.form-main {
-    padding-left: 32px;
-    padding-right: 32px;
 }
