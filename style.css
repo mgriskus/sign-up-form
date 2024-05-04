@@ -11,13 +11,14 @@
 
 body {
     display: flex;
+    background-color: #F9FAFB;
 }
 
 .side {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    min-width: 30%;
+    width: 40vw;
     background-image: url("./img/plants.jpg");
     background-size: cover;
 }
@@ -28,7 +29,7 @@ body {
     justify-content: center;
     margin-top: 20vh;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 8px;
+    padding: 8px 72px;
 }
 
 .odin-picture {
@@ -49,4 +50,72 @@ footer {
 
 footer, footer a {
     color: white;
+}
+
+.info {
+    font-size: 18px;
+}
+
+.form-main {
+    background-color: white;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    column-gap: 64px;
+    row-gap: 12px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-width: 300px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: rgb(80, 80, 80);
+}
+
+input:invalid {
+    border: red;
+}
+
+legend {
+    font-size: 24px;
+}
+.sign-up fieldset {
+    padding: 16px;
+}
+
+p,
+button {
+    margin: 16px;
+}
+
+fieldset {
+    border: 0;
+}
+
+input,
+button {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    background-color: #596D48;
+    color: white;
+    padding: 4px 16px;
+}
+
+.log-in-link {
+    color: #596D48;
+    text-decoration: none;
 }

@@ -21,39 +21,44 @@
         </footer>
     </div>
     <div class="sign-up">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize
+        <p class="info">This is not a real online service! You know you need something like this in your life to help you realize
             your deepest dreams. Sign up now to get started.</p>
-        <p>You <em>know</em> you want to.</p>
+        <p class="info">You <em>know</em> you want to.</p>
         <form action="#" method="post">
-            <ul>
-                <li>
-                    <label for="first-name">First name</label>
-                    <input name="first-name" id="first-name">
-                </li>
-                <li>
-                    <label for="last-name">Second name</label>
-                    <input name="last-name" id="last-name">
-                </li>
-                <li>
-                    <label for="email">Email</label>
-                    <input name="email" id="email" type="email">
-                </li>
-                <li>
-                    <label for="phone-number">Phone number</label>
-                    <input name="phone-number" id="phone-number" type="tel">
-                </li>
-                <li>
-                    <label for="password">Password</label>
-                    <input name="password" id="password" type="password">
-                </li>
-                <li>
-                    <label for="password-confirmation">Confirm password</label>
-                    <input name="password-confirmation" id="password-confirmation" type="password">
-                </li>
-            </ul>
+            <div class="form-main">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <ul>
+                        <li>
+                            <label for="first-name">First name</label>
+                            <input name="first-name" id="first-name">
+                        </li>
+                        <li>
+                            <label for="last-name">Second name</label>
+                            <input name="last-name" id="last-name">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input name="email" id="email" type="email">
+                        </li>
+                        <li>
+                            <label for="phone-number">Phone number</label>
+                            <input name="phone-number" id="phone-number" type="tel">
+                        </li>
+                        <li>
+                            <label for="password">Password</label>
+                            <input name="password" id="password" type="password">
+                        </li>
+                        <li>
+                            <label for="password-confirmation">Confirm password</label>
+                            <input name="password-confirmation" id="password-confirmation" type="password">
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
             <button type="submit">Create Account</button>
         </form>
-        <p>Already have an account? <a href="#">Log in</a></p>
+        <p>Already have an account? <a class="log-in-link" href="#">Log in</a></p>
     </div>
 </body>
 
