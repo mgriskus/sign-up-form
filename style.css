@@ -125,3 +125,14 @@ button {
     flex-direction: column;
     justify-content: center;
 }
+.info,
+.log-in-p,
+button {
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.form-main {
+    padding-left: 32px;
+    padding-right: 32px;
+}
