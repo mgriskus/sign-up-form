@@ -119,3 +119,9 @@ button {
     color: #596D48;
     text-decoration: none;
 }
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
