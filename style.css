@@ -5,8 +5,10 @@
 
 :root {
     --sign-up-margin: 48px;
-    --fieldset-padding: 16px;
+    --fieldset-padding: 24px;
     --main-color: #596D48;
+    --shadow-color: #DCDDDD;
+    --special-shadow: 2px 4px 8px var(--shadow-color);
 }
 
 * {
@@ -56,7 +58,8 @@ footer {
     margin-top: auto;
 }
 
-footer, footer a {
+footer,
+footer a {
     color: white;
 }
 
@@ -68,8 +71,13 @@ footer, footer a {
     justify-content: center;
 }
 
-.call-to-action {
+.call-to-action,
+legend {
     font-size: 1.5rem;
+}
+
+legend {
+    padding: 8px 0;
 }
 
 p {
@@ -87,6 +95,9 @@ button {
     padding-left: calc(var(--sign-up-margin) - var(--fieldset-padding));
     padding-right: calc(var(--sign-up-margin) - var(--fieldset-padding));
     background-color: white;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--special-shadow);
 }
 
 .sign-up fieldset {
@@ -119,6 +130,11 @@ input {
     border: 2px solid #E5E7EB;
 }
 
+.form-main input:focus {
+    border: 2px solid #305CDB;
+    box-shadow: var(--special-shadow);
+}
+
 input:invalid {
     border-color: red;
 }
@@ -136,6 +152,7 @@ button {
     color: white;
     padding: 8px 36px;
     font-weight: bold;
+    box-shadow: var(--special-shadow);
 }
 
 .log-in-link {
